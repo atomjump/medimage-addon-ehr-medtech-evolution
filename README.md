@@ -1,6 +1,12 @@
 # medimage-addon-ehr-medtech32
 MedTech32 config for EHR Connector Add-on for MedImage
 
+
+To create your MEDIMAGE user, use the query:
+CREATE USER MEDIMAGE WITHOUT LOGIN;
+
+
+
 To create your own EHR connector, use this package as a template. The only files
 you need to change:
 
