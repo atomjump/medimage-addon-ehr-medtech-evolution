@@ -5,7 +5,7 @@
 	"testConnectionShowField": "PathToFile",
 	"createUserSQL": "GRANT INSERT ON ATTACHMENTSMGR TO MEDIMAGE; GRANT SELECT ON PATIENT TO MEDIMAGE;",	
 	"getIdSQL": "SELECT ID AS PATIENTID FROM PATIENT WHERE PATIENT.ISPATIENT = 1 AND PATIENT.NHI = '[NHID]';",
-	"insertAttachmentSQL": "INSERT INTO ATTACHMENTSMGR (EntityId, Description, Note, PathToFile, FileSize, RowInsertUserId, RowInsertComp, RowInsertLocationId, RowUpdateUserId, RowUpdateComp, RowUpdateLocationId, IsActive) VALUES ('[patientID]','[photoname]','','[fullphotopath]',[filelength],'[staffname]','[computer]','[location]','[staffname]','[computer]','[location]',1);",
+	"insertAttachmentSQL": "INSERT INTO ATTACHMENTSMGR (EntityId, Description, Note, PathToFile, FileSize, RowInsertUserId, RowInsertComp, RowInsertLocationId, RowUpdateUserId, RowUpdateComp, RowUpdateLocationId, IsActive, RowInactive) VALUES ('[patientID]','[photoname]','','[fullphotopath]',[filelength],'[staffname]','[computer]','[location]','[staffname]','[computer]','[location]',1,0);",
 	"host": "localhost",
 	"dbname": "consult",
 	"username": "sysuser",
