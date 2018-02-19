@@ -5,7 +5,7 @@
 	"testConnectionShowField": "PathToFile",
 	"createUserSQL": "GRANT INSERT ON ATTACHMENTSMGR TO MEDIMAGE; GRANT SELECT ON PATIENT TO MEDIMAGE;",	
 	"getIdSQL": "SELECT ID AS PATIENTID FROM PATIENT WHERE PATIENT.ISPATIENT = 1 AND PATIENT.NHI = '[NHID]';",
-	"insertAttachmentSQL": "INSERT INTO ATTACHMENTSMGR (EntityId, WhenAdded, Description, PathToFile, Note, FileSize,RowInactive, RowInsertComp, RowInsertUserId, RowInsertWhen, RowUpdateUserId, RowInsertLocationId,RowUpdateLocationId, RowUpdateWhen, RowUpdateComp, CreatedComputerId, CreatedBy, CreatedAt, CreatedLocationId,ModifiedComputerId, ModifiedBy, ModifiedAt,ModifiedLocationId,IsActive, Type,Author) VALUES('[patientID]','[currentDateTime]','MedImage Photo', '[fullphotopath]','[photoname]',[filelength],0,'[computer]','[staffname]','[currentDateTime]','[staffname]','[location]','[location]','[currentDateTime]','[computer]',[location],[staffname],'[currentDateTime]',[location],[computer],'[staffname]','[currentDateTime]',[location],1,NULL,'[staffname]');",
+	"insertAttachmentSQL": "INSERT INTO ATTACHMENTSMGR (EntityId,  WhenAdded,  Description,  PathToFile,  Note,  FileSize, RowInactive,  RowInsertComp,  RowInsertUserId,  RowInsertWhen,  RowUpdateUserId,  RowInsertLocationId, RowUpdateLocationId,  RowUpdateWhen,  RowUpdateComp,  CreatedComputerId,  CreatedBy,  CreatedAt,  CreatedLocationId, ModifiedComputerId,  ModifiedBy,  ModifiedAt, ModifiedLocationId, IsActive,  Type, Author) VALUES('[patientID]', '[currentDateTime]', 'MedImage Photo',  '[fullphotopath]', '[photoname]', [filelength], 0, '[computer]', 1,'[currentDateTime]',1, [location], [location], '[currentDateTime]',1, 1, '[staffname'],'[currentDateTime]',[location], [computer],'[staffname]','[location]',[location],1,NULL, '[staffname]');",
 	"host": "localhost",
 	"dbname": "consult",
 	"username": "sysuser",
@@ -28,5 +28,7 @@
 		"location": 1,
 		"fullphotopath": 255	
 	},
-	"createUserHelp": "<p>You can do this <b>manually</b> in your SQL Server Management Studio.</p><p>To do this <i>manually</i>:</p><p>1. Bring up your SQL console and connect to the EHR database (typically with your system login and password)</p><p>2. Run a SQL query similar to this:</p><pre>CREATE USER MEDIMAGE;</pre><p>3. Click the 'Switch to MEDIMAGE user' button below.</p>" 
+	"createUserHelp": "<p>You can do this <b>manually</b> in your SQL Server Management Studio.</p><p>To do this <i>manually</i>:</p><p>1. Bring up your SQL console and connect to the EHR database (typically with your system login and password)</p><p>2. Run a SQL query similar to this:</p><pre>CREATE USER MEDIMAGE;</pre><p>3. Click the 'Switch to MEDIMAGE user' button below.</p>",
+	"createUserHelpFull": "<p>You can do this <b>manually</b> in your SQL Server Management Studio. After a successful connection using the system user, you will be <b>given an option</b> to switch to the MEDIMAGE user (which will give all correct permissions to that user).</p><p>To do this <i>manually</i>:</p><p>1. Bring up your SQL console and connect to your EHR database (typically with the system login and password)</p><p>2. Run similar SQL queries to the following:</p><pre>CREATE USER MEDIMAGE;
+GRANT INSERT ON ATTACHMENTSMGR TO MEDIMAGE; GRANT SELECT ON PATIENT TO MEDIMAGE;</pre><p>3. Set the username to 'MEDIMAGE' above.</p>" 
 }
