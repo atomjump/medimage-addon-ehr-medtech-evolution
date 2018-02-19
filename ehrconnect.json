@@ -12,7 +12,7 @@
 	"password": "masterkey",
 	"staffname": "MedImage",
 	"computer": "Main",
-	"location": "Main",
+	"location": "M",
 	"useResized": false,
 	"parentPhotoDir": "C:\\MEDTECH\\Attachments",
 	"useODBC": true,
