@@ -2,7 +2,7 @@
   "author": "AtomJump.com",
   "name": "medimage-addon-ehr-medtech32",
   "description": "MedTech32 config for EHR Connector Add-on for MedImage",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "private": false,
   "scripts": {
     "install": ""
