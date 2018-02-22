@@ -13,9 +13,10 @@
 	"staffname": "MedImage",
 	"computer": "Main",
 	"localFolderMapDown": "C:\\mt32",
-	"location": "M:\\",
+	"mapDownTo": "M:\\",
+	"location": "M",
 	"useResized": false,
-	"parentPhotoDir": "C:\\MEDTECH\\Attachments",
+	"parentPhotoDir": "C:\\MT32\\Attachments",
 	"useODBC": true,
 	"dsnHere": "medtech-evolution",
 	"logging": true,
@@ -29,6 +30,7 @@
 		"location": 20,
 		"fullphotopath": 255	
 	},
-	"createUserHelp": "<p>You can do this by creating a Windows user, or from within your SQL Server Management Studio, depending on your SQL Server set-up.</p><p>To do this with a <i>Windows user</i>:</p><p>1. Go into Windows/Settings/Accounts and create a new user called 'MEDIMAGE'. Bring up your Management Studio and connect to the database (typically with your original user)</p><p>2. Enter Database/Security/Login. Right click/Properties on the MEDIMAGE user. Click 'User Mapping' and tick your MedTech Evolution system. Assign db_datareader and db_datawriter permission for that user.</p><p>3. Click the 'Switch to MEDIMAGE user' button below.</p>",
-	"createUserHelpFull": "<p>You can do this <b>manually</b> in your SQL Server Management Studio or by creating a new Windows user called 'MEDIMAGE'. After a successful connection using the system user, above, you will be <b>given an option</b> to switch to the MEDIMAGE user (which will give permissions to that user also).</p><p>To do this <i>manually</i>:</p><p>1. Bring up your SQL console and connect to your SQL database (typically with the system login and password)</p><p>2. Run similar SQL queries to the following:</p><pre>CREATE USER \"YourServer\\MEDIMAGE\"; GRANT INSERT ON ATTACHMENTSMGR TO \"YourServer\\MEDIMAGE\"; GRANT SELECT ON PATIENT TO \"YourServer\\MEDIMAGE\" ;</pre><p>3. Set the username to 'MEDIMAGE' above.</p>" 
+	"createUserHelp": "<p>You can do this by creating a Windows user, or creating a 'login' and 'user' within your SQL Server Management Studio, depending on your SQL Server set-up.</p><p>To do this with a <i>Windows user</i>:</p><p>1. Go into Windows/Settings/Accounts and create a new user called 'MEDIMAGE'. Bring up your Management Studio and connect to the database (typically with your original user)</p><p>2. Enter Database/Security/Login. Right click/Properties on the MEDIMAGE user. Click 'User Mapping' and tick your MedTech Evolution system. Assign db_datareader and db_datawriter permission for that user.</p><p>3. Click the 'Switch to MEDIMAGE user' button below.</p>",
+	"createUserHelpFull": "<p>You can do this <b>manually</b> in your SQL Server Management Studio or by creating a new Windows user called 'MEDIMAGE'. After a successful connection using the system user, above, you will be <b>given an option</b> to switch to the MEDIMAGE user (which will attempt to give permissions to that user, also).</p><p>To create this user <i>manually</i>:</p><p>1. Bring up your SQL Server Management Studio and connect to your SQL database (typically with the system login and password)</p><p>2. Create a 'login' on the whole system (under security properties) called 'MEDIMAGE', and then on your Evolution database properties, create a 'user' with the same name.</p><p>3. Grant db_datareader and db_datawriter permissions to the 'MEDIMAGE' user. You can run similar SQL queries to the following:</p><pre>CREATE USER \"YourServer\\MEDIMAGE\"; GRANT INSERT ON ATTACHMENTSMGR TO \"YourServer\\MEDIMAGE\"; GRANT SELECT ON PATIENT TO \"YourServer\\MEDIMAGE\" ;</pre><p>4. Set the username to 'MEDIMAGE' in these settings, above.</p>",
+	"odbcUserHelp": "<div class=\"panel panel-default\"> <div class=\"panel-heading\">Connecting with ODBC</div><div class=\"panel-body\"><p>1. Enter 'ODBC sources 32-bit' or 'ODBC sources 64-bit' in your Windows Start bar, choose your EHR's database driver, and create a new 'System DSN' (not a 'User DSN').</p><div class=\"table-responsive\"><table class=\"table table-striped table-bordered table-hover\"><thead><tr><th>Field</th><th>Example Values</th></tr></thead><tbody><tr><td>Data Source Name (DSN)</td><td><b>medtech32</b></td></tr><tr><td>Database</td><td><b>localhost:1234</b></td></tr><tr><td>Database Account</td><td><b>sysadmin</b></td></tr><tr><td>Password</td><td><b>yourpass</b></td></tr></tbody></table></div><p>2. Fill out the details above, and click 'Test Connection', or the equivalent in your driver.</p><p>3. Enter the 'DSN' name i.e. 'medtech-evolution' into the 'ODBC Database DSN name' field above. Click 'Save &amp; Check Connection' below.</p></div><div class=\"panel-footer text-muted\"></div></div>" 
 }
