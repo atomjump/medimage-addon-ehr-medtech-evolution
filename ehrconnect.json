@@ -12,7 +12,7 @@
 	"password": "masterkey",
 	"staffname": "MedImage",
 	"computer": "Main",
-	"localFolderMapDown": "C:\\mt32",
+	"localFolderMapDown": "C:\\mt32\\",
 	"mapDownTo": "M:\\",
 	"location": "M",
 	"useResized": false,
