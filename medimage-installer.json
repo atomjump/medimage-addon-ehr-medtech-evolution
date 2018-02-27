@@ -1,20 +1,18 @@
 {
   "author": "AtomJump.com",
-  "name": "ehr-medtech32",
+  "name": "ehr-medtech-evolution",
   "description": "MedTech32 config for EHR Connector Add-on for MedImage",
   "version": "0.0.1",
   "private": false,
   "license": "MIT License",
   "installCommands": {
   	 "all": [
-  	 	  "npm install",
-  	  	  "node install.js first"
   	  ],
   	  "win32": [
-  	  	  "C:\\medimage\\addons\\ehr-medtech32\\odbc\\odbcibinstall.exe /S"
+  	  	   "COPY ehrconnect.json ..\\ehrconnect\\config\\ehrconnect.json"
   	  ],
   	  "win64": [
-  	  	  "C:\\medimage\\addons\\ehr-medtech32\\odbc\\odbcibinstall.exe /S"
+  	  	   "COPY ehrconnect.json ..\\ehrconnect\\config\\ehrconnect.json"
   	  ],
   	  "unix": [
   	  ],
@@ -24,7 +22,6 @@
   },
    "uninstallCommands": {
   	 "all": [
-  	 	   "node uninstall.js"
   	  ],
   	  "win32": [
   	  ],
