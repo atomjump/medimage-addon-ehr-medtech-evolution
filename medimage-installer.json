@@ -2,9 +2,15 @@
   "author": "AtomJump.com",
   "name": "ehr-medtech-evolution",
   "description": "MedTech32 config for EHR Connector Add-on for MedImage",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": false,
   "license": "MIT License",
+  "successMessages": {
+  	"all": {
+  		"main": "Your installation was successful. You should now configure your connection to MedTech Evolution's SQL Server database. Click the 'EHR Connector' tab to get started.",
+  		"extended": ""
+  	}
+  },
   "installCommands": {
   	 "all": [
   	  ],
