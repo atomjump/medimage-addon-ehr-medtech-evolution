@@ -16,6 +16,7 @@
 	"mapDownTo": "M:\\",
 	"location": "M",
 	"useResized": false,
+	"useOriginal": true,
 	"parentPhotoDir": "C:\\MT32\\Attachments",
 	"useODBC": true,
 	"dsnHere": "medtech-evolution",
