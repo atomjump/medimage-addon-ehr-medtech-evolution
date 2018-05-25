@@ -1,9 +1,5 @@
-# medimage-addon-ehr-medtech32
-MedTech32 config for EHR Connector Add-on for MedImage
-
-
-To create your MEDIMAGE user, use the query:
-CREATE USER MEDIMAGE WITHOUT LOGIN;
+# medimage-addon-ehr-medtech-evolution
+MedTech Evolution config for EHR Connector Add-on for MedImage
 
 
 
