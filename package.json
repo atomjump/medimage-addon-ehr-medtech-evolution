@@ -17,7 +17,7 @@
   },
   "repository" : { 
      "type" : "git",
-     "url" : "https://github.com/atomjump/medimage-addon-ehr-medtech32.git"
+     "url" : "https://src.atomjump.com/atomjump/medimage-addon-ehr-medtech32.git"
   },
   "optionalDependencies": {},
   "engines": {
