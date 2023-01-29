@@ -1,4 +1,7 @@
 # medimage-addon-ehr-medtech-evolution
+
+__WARNING: this project has now moved to https://src.atomjump.com/atomjump/medimage-addon-ehr-medtech-evolution.git__
+
 MedTech Evolution config for EHR Connector Add-on for MedImage
 
 
